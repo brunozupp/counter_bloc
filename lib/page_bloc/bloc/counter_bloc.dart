@@ -13,10 +13,10 @@ class CounterBloc extends Bloc<CounterEvent,CounterState> {
 
   void _incremente(CounterIncrement event, Emitter<CounterState> emit) {
     // state -> pega o último estado
-    emit(CounterStateDate(state.counter + 1));
+    emit(CounterStateData(state.counter + 1));
   }
 
   void _decrement(CounterDecrement event, Emitter<CounterState> emit) {
-    emit(CounterStateDate(state.counter - 1));
+    emit(CounterStateData(state.counter - 1));
   }
 }

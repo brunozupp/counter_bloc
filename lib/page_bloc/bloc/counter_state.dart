@@ -11,6 +11,6 @@ class CounterStateInitial extends CounterState {
   CounterStateInitial() : super(0);
 }
 
-class CounterStateDate extends CounterState {
-  CounterStateDate(super.counter);
+class CounterStateData extends CounterState {
+  CounterStateData(super.counter);
 }
